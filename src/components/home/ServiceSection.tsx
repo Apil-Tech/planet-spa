@@ -1,6 +1,6 @@
-import service1 from "../../assets/Images/FULL BODY MASSAGE _edited.png"
-import service2 from "../../assets/Images/Shirodhara.png"
-import service3 from "../../assets/Images/how_to_give_foot_massage-1024x683-1.png"
+import service1 from "../../assets/Images/FULL BODY MASSAGE _edited.png";
+import service2 from "../../assets/Images/Services/hot_stone_massage_1024x1024.png";
+import service3 from "../../assets/Images/how_to_give_foot_massage-1024x683-1.png";
 
 interface Package {
   title: string;
@@ -22,7 +22,7 @@ const packages: Package[] = [
     title: "Relaxation Package",
     duration: "(3 Hours)",
     price: "Rs. 9000/-",
-    description: "Ayurvedic Or Swedish Massage, Shirodhara, Sauna/Steam",
+    description: "Ayurvedic Or Swedish Massage, Hot Stone, Sauna/Steam",
     image: service2,
   },
   {
@@ -46,14 +46,15 @@ const ServicePackages = () => {
             {packages.map((pkg, index) => (
               <div
                 key={index}
-                className="overflow-hidden flex flex-col items-center text-center"
+                className="overflow-hidden flex flex-col items-center w-full"
               >
                 <img
                   src={pkg.image}
                   alt={pkg.title}
-                  className="w-4/5 h-90 object-cover rounded-xl"
+                  className="w-full h-96 object-cover rounded-t-xl"
                 />
-                <div className="p-6">
+
+                <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-semibold mb-2">{pkg.title}</h3>
                   <p className="text-gray-600 mb-2">{pkg.duration}</p>
                   <p className="text-[#8B4513] font-bold mb-2">{pkg.price}</p>

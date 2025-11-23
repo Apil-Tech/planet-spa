@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import shirdhara from "../../assets/Images/Services/Shirodhara.png";
+import cream from "../../assets/Images/Services/cream.png";
 import hotstone from "../../assets/Images/Services/hot_stone_massage_1024x1024.png";
 import trekker from "../../assets/Images/Services/trekker-healer-massage-3.png";
 import thaiMassage from "../../assets/Images/Services/thai massage.avif";
@@ -39,15 +39,15 @@ interface Service {
 
 const services: Service[] = [
   {
-    name: "SHIRODHARA TREATMENT",
-    image: shirdhara,
+    name: "Cream Massage",
+    image: cream,
     prices: [
-      { duration: "60 min", price: "Rs.6000/-" },
-      { duration: "90 min", price: "Rs.8000/-" },
-      { duration: "120 min", price: "Rs.9000/-" },
+      { duration: "60 min", price: "Rs.3500/-" },
+      { duration: "90 min", price: "Rs.5200/-" },
+      { duration: "120 min", price: "Rs.6500/-" },
     ],
     description:
-      "Ancient Ayurvedic therapy that involves a gentle stream of warm herbal oil poured over the forehead for relaxation.",
+      "Glowing skin, Moisturizes, reduce wrinkles, balance blood circulation, more smoother skin overall healthy looking skin.",
   },
   {
     name: "HOT STONE MASSAGE",
